@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #854589"
+    tools:context=".ActividadBusqueda">
+
+    <TextView
+        android:id="@+id/txtProvincia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Provincia"
+        android:textColor="#89d4ef"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtFamiliaProfesional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Familia Profesional"
+        android:textColor="#89d4ef"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spFamiliaProfesional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtCilo"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:text="Ciclo"
+        android:textColor="#89d4ef"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFamiliaProfesional"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtTurno"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:text="Turno"
+        android:textColor="#89d4ef"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spTurno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCiclo"
+        app:layout_constraintVertical_bias="0.661"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spProvincia"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background=" #427b90 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProvincia"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spFamiliaProfesional"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="68dp"
+        android:background=" #427b90 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spProvincia"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spCiclo"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background=" #427b90 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCilo"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spTurno"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:background=" #427b90 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spCiclo"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnReporte"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="52dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#854589"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toEndOf="@+id/btnBuscar"
+        app:srcCompat="@drawable/reporte"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnBuscar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="52dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#854589"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnInicio"
+        app:layout_constraintTop_toBottomOf="@+id/spTurno"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/lupa"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnInicio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="52dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#854589"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTurno"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/inicio"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

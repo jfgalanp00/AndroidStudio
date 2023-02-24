@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #854589"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="207dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/myfpex"
+        android:textAlignment="center"
+        android:textColor="#89d4ef"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtInfo1"
+        android:layout_width="246dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/tu_app_de_informaci_n_sobre_el_mundo_de_la_formacion_profesional"
+        android:textAlignment="center"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtInfo2"
+        android:layout_width="360dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/te_recomendamos_que_busques_informacion_sobre_cualquier_ciclo_formativo_nosotros_te_asesoramos_con_el_siguiente_puedes_pulsar_en_la_lupa"
+        android:textAlignment="center"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo1"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtRecomendacion"
+        android:layout_width="383dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/desarollo_de_aplicaciones_multiplataformas"
+        android:textAlignment="center"
+        android:textColor="#B3E5FC"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInfo2"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBuscar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#854589"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonActualizar"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecomendacion"
+        app:layout_constraintVertical_bias="0.295"
+        app:srcCompat="@drawable/lupa"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButtonActualizar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#854589"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecomendacion"
+        app:layout_constraintVertical_bias="0.295"
+        app:srcCompat="@drawable/actualizar"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #854589"
+    tools:context=".ActividadReporte">
+
+    <TextView
+        android:id="@+id/txtCorreo"
+        android:layout_width="71dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="64dp"
+        android:text="Correo:"
+        android:textColor="#89d4ef"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtCiclo"
+        android:layout_width="81dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Ciclo:"
+        android:textSize="16sp"
+        android:textColor="#89d4ef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCorreo"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="91dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Descripcion"
+        android:textSize="16sp"
+        android:textColor="#89d4ef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCiclo"
+        tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#427b90"
+        android:ems="10"
+        android:hint="(Opcional)"
+        android:inputType="textPersonName"
+        android:textColorHint="#89d4ef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+        tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,LabelFor,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#427b90"
+        android:ems="10"
+        android:hint="(Requerido)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCiclo"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edMultiDescription"
+        android:layout_width="297dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="20dp"
+        android:background="#427b90"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Escribe tu reporte aqui."
+        android:inputType="textMultiLine"
+        android:textColorHint="#89d4ef"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        tools:ignore="Autofill,HardcodedText,LabelFor,SpeakableTextPresentCheck,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#854589"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edMultiDescription"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/enviar"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
